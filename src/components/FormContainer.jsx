@@ -77,6 +77,20 @@ const {data: booking, error}= await supabase
     return;
 
   }
+
+  await fetch("/api/send-email",{
+  method: "POST",
+  headers:{
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    name,
+    email,
+    phone,
+    description,
+  }),
+
+  });
   //SUCCESS MESSAGE
   setError("");
   setSubmittedData(data);
