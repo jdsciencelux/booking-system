@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
     await resend.emails.send({
       from: "Latex Booking <onboarding@resend.dev>",
-      to: "YOUR_EMAIL@gmail.com",
+      to: "djspitroast@gmail.com",
       subject: "New Latex Repair Booking",
       text: `
 Name: ${name}
