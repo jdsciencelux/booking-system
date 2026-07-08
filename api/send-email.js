@@ -18,7 +18,7 @@ console.log(
 
     const{data, error}=await resend.emails.send({
       from: "Latex Booking <onboarding@resend.dev>",
-      to: "djspitroast@gmail.com",
+      to: "hello@chicagolatexrepair.com",
       subject: "New Latex Repair Booking",
       text: `
 Name: ${name}
