@@ -20,15 +20,44 @@ console.log(
       from: "Latex Booking <hello@chicagolatexrepair.com>",
       to: "hello@chicagolatexrepair.com",
       subject: "New Latex Repair Booking",
-      text: `
+text: `
+Hi ${name},
+
+Thank you for contacting us!
+
+We've successfully received your repair inquiry and will review it shortly.
+
+We typically respond within 24 hours with pricing and availbility. 
+
+If you'd like to provide photos of your item before we prepare a quote, simply reply to this email.
+
+Thank you,
+
+Chicago Latex Repair
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NEW LATEX REPAIR BOOKING
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CUSTOMER INFORMATION
+
 Name: ${name}
 
 Email: ${email}
 
 Phone: ${phone}
 
-Description:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REPAIR REQUEST
+
 ${description}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Submitted from your Latex Repair website.
 `,
 });
 
