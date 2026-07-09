@@ -21,19 +21,6 @@ console.log(
       to: "hello@chicagolatexrepair.com",
       subject: "New Latex Repair Booking",
 text: `
-Hi ${name},
-
-Thank you for contacting us!
-
-We've successfully received your repair inquiry and will review it shortly.
-
-We typically respond within 24 hours with pricing and availbility. 
-
-If you'd like to provide photos of your item before we prepare a quote, simply reply to this email.
-
-Thank you,
-
-Chicago Latex Repair
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -58,6 +45,27 @@ ${description}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Submitted from your Latex Repair website.
+`,
+});
+
+await resend.emails.send({
+  from: "Latex Booking <hello@chicagolatexrepair.com>",
+  to: email,
+  subject: "We've Received Your Latex Repair Inquiry",
+  text: `
+Hi ${name},
+
+Thank you for contacting us!
+
+We've successfully received your repair inquiry and will review it shortly.
+
+We typically respond within 24 hours with pricing and availability.
+
+If you'd like to provide photos of your item before we prepare a quote, simply reply to this email.
+
+Thank you,
+
+Chicago Latex Repair
 `,
 });
 
