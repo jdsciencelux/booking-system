@@ -17,7 +17,7 @@ console.log(
   try {
 
     const{data, error}=await resend.emails.send({
-      from: "Latex Booking <hello@chicagolatexrepair.com>",
+      from: "Chicago Latex Repair <hello@chicagolatexrepair.com>",
       to: "hello@chicagolatexrepair.com",
       subject: "New Latex Repair Booking",
 text: `
@@ -44,12 +44,12 @@ ${description}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Submitted from your Latex Repair website.
+Submitted from chicagolatexrepair.com
 `,
 });
 
 await resend.emails.send({
-  from: "Latex Booking <hello@chicagolatexrepair.com>",
+  from: "Chicago Latex Repair <hello@chicagolatexrepair.com>",
   to: email,
   subject: "We've Received Your Latex Repair Inquiry",
   text: `
