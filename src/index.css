@@ -28,16 +28,3 @@ body { margin: 0; font-family: system-ui, sans-serif; }
 .preview-overlay{ position:fixed; inset:0; height: 200px; background:rgba(0,0,0,.5); display:flex; justify-content:center; align-items:center; z-index:999; } 
 .error-message{ background: #ffe5e5; color: #c00000; padding: 10px; margin-bottom: 10px; border-radius:5px; } 
 .booking-card{ background:white; color:black; padding:15px; margin-bottom:15px; border-radius:8px; }
-@media (max-width: 768px) {
-
-  .carousel-container{
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-
-      height: auto;
-
-      padding:20px;
-  }
-
-}
